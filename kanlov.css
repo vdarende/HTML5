@@ -1,0 +1,138 @@
+.tabi {
+    color: blue;
+    border: 5px blue groove;
+}
+
+
+.naklov{
+    background-color:cadetblue;
+}
+
+p{
+    color:red;
+
+}
+
+/*ID ile Ulaþýlabilir*/
+#volkan{
+    color:aliceblue;
+}
+
+
+ /*Tüm Etiketklere Uygular*/
+*{
+    font-size:10px;
+}
+
+/*Div altýbndaki plere*/
+div p{
+    color:aliceblue;
+}
+
+
+/*tabi clasý uygullananalrýn altýndaki plere*/
+
+.tabi p{
+    color:beige;
+}
+
+/*bütün div ve plere uygulanýr*/
+div, p {
+    color: aliceblue;
+}
+
+
+/*classý tabi olan divler ve bütün plere uygulanýr*/
+div.tabi, p {
+    color: aliceblue;
+}
+
+/* Group Selectors
+
+    (*) Tüm Etiketler
+    (p) tüm p ler
+    (div,p) tüm div ve p ler
+    (div,p) tüm div ve p ler
+    (div>p> tüm üst etkiketi div olan p ler
+    (p ~  div) p ile ayný seviyeki tüm divler
+    (p + div) p etiketinden sonra gelen div
+*/
+
+h1[title="volkan"]{
+    background-color:burlywood;
+}
+
+p[isim="darende"]{
+    background-color:chocolate;
+}
+
+/*isim özelliðinde dar kelimesi geçen*/
+
+p[isim ~="dar"] {
+    background-color: crimson;
+}
+
+/*isim özelliðinde dar ile baþlayan*/
+
+a[isim^="dar"] {
+    background-color: crimson;
+}
+
+/*isim özelliðinde dar ile biten*/
+
+a[isim$="dar"][isim="darende"] {
+
+    background-color: crimson;
+}
+
+
+input[type="text"]{
+    color:aliceblue;
+}
+
+img[src="img"] {
+    color: aliceblue;
+}
+
+/*Pseudo element*/
+/*p etiketi içindeki ilk satýrlarý etkiler*/
+p::first-line{
+    color:aquamarine;
+}
+
+
+/*Pseudo class*/
+
+ul li:first-child {
+    color: aquamarine;
+}
+
+
+ul li:last-child {
+    color: aquamarine;
+}
+
+p.tabi::first-line{
+    font-size:20px;
+}
+
+
+/*p etiketi sonrasýnda etkiler*/
+p::after {
+    content:"-SONRAKÝ";
+    font-size: 20px;
+    display:block;
+}
+
+
+a:link{
+    display:none;
+}
+
+a:hover{
+
+}
+
+div:hover{
+
+}

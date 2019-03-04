@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+
+    <title>BAŞLIK DÜNYA</title>
+    <meta name="title" content="deneme">
+    <meta name="keywords" content="deneme,ilk sayfa">
+    <meta name="descripton" content="Benim ilk sayfam">
+    <!--BUNU KOYMASAKDA VARSAYILAN UTF-8-->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="kanlov.css" />
+
+
+</head>
+
+<body class="naklov">
+
+    <!--Semantic Elements
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+    <address></address>
+        <aside></aside>
+    <header></header>
+    <section></section>
+        <main></main>
+        <article></article>
+    <h1></h1>
+    <h2></h2>
+    
+    <footer></footer>-->
+
+    <iframe src="https://www.mgm.gov.tr" width="100%" frameborder="0"></iframe>
+
+    <p>Volkan tarafından <time datetime="02.03.2019 15:00">yayınlandı</time></p>
+    <div>
+        <p class="tabi">
+            Every HTML element <span style="color:blue">has a default display value</span> depending on what type of element it is. The default display value for most elements is block or inline.
+        </p>
+    </div>
+
+<h1 title="volkan">BAŞLIK</h1>
+<h2>BAŞLIK</h2>
+<h3>BAŞLIK</h3>
+<h4>BAŞLIK</h4>
+<h5>BAŞLIK</h5>
+<hr><!--çizgi-->
+<!-- strong,em önemli olanlar için kullanılır-->
+
+    <a href="#p1">PARAGRAFA GİT</a>
+<p id="volkan"><b>BURADA PARAGRAF</b> BURADA PARAGRAF <strong>BURADA PARAGRAF</strong> BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAFBURADA PARAGRAFBURADA PARAGRAF</p>
+<p><i>BURADA PARAGRAF</i><b><i> BURADA</i></b> PARAGRAF <em>BURADA PARAGRAF</em> BURADA PARAGRAF <u>BURADA PARAGRAF</u> BURADA PARAGRAF <ins>BURADA PARAGRAF </ins>>BURADA PARAGRAF <sup>BURADA PARAGRAF</sup>BURADA PARAGRAFBURADA PARAGRAF</p>
+
+<p>X <sup>2</sup> X <sub>2</sub></p>
+
+
+<p isim="dar ende"><del>BURADA PARAGRAF</del> BURADA PARAGRAF <small>BURADA PARAGRAF</small> BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAF BURADA PARAGRAFBURADA PARAGRAFBURADA PARAGRAF</p>
+
+<p><mark>MERHABA DÜNYA</mark></p>
+
+
+    <!--Sırasız Listeler 	disc square circle verilmez is otomatik oluşturuyor-->
+
+
+    <ul type="square">
+        <li>
+            1.Madde
+            <ul type="disc">
+                <li>alt madde</li>
+                    <ul>
+                    <li>alt madde</li>
+                    <li>altmadde2</li>
+
+                    </ul>
+                <li>altmadde2</li>
+
+            </ul>
+        </li>
+        <li>
+            2.Madde
+        </li>
+    </ul>
+
+
+    <!--Sıralı Listeler 	disc square circle verilmez is otomatik oluşturuyor-->
+
+    <!--reversed	reversed	Specifies that the list order should be descending (9,8,7...)
+    start	number	Specifies the start value of an ordered list
+    type	1 A a I i	Specifies the kind of marker--> 
+
+    <ol type="1" start="2">
+        <li>
+            1.Madde
+            <ol type="A" >
+                <li>alt madde</li>
+                <ol>
+                    <li>alt madde</li>
+                    <li>altmadde2</li>
+
+                </ol>
+                <li>altmadde2</li>
+
+            </l>
+        </li>
+        <li>
+            2.Madde
+        </li>
+    </ol>
+    
+    <!--Images-->
+
+    <img src="Img/indir.png" width="100"  alt="soru işareti"/>
+    <img src="Img/indir.jpg" width="100"  alt="zar"/>
+
+    <!--Forms-->
+    <br />
+    <br />
+
+
+    
+    <!--https://www.w3schools.com/html/html_forms.asp-->
+    <!--https://www.w3schools.com/html/html_form_input_types.asp-->
+    <form action="/my-first.page.html">
+        <input type="text" name="ad" required />
+        <input type="email" name="email" placeholder="eposta giriniz" required />
+        <input type="file" name="file" required />
+         <select name="seciniz">
+            <option>1</option>
+           <option>2</option>
+
+        </select>
+
+        <select multiple name="seciniz2">
+            <option>1</option>
+            <option>2</option>
+
+        </select>
+        <input type="number"  min="1" max="5" name="deger" />
+
+        <input type="number" name="points" min="0" max="100" step="10" value="30"/>
+
+        <input type="date" name="tarih" />
+        <input type="submit" value="kaydet" />
+        <input type="reset" value="sıfırla" />
+    </form>
+
+    <!--Table-->
+    <br />
+
+    <br />
+
+    <table border="1" width="100%" height="100" >
+        <thead>
+            <tr>
+                <th>
+                    Başlık
+                </th>
+                <th>
+                    Vesaire
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+ <tr>
+     <td colspan="2">EVET</td>
+ </tr>
+
+            <tr><td rowspan="2">bura</td><td>bura</td></tr>
+            <tr><td>buyra</td></tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--linki yukarıda-->
+    <p id="p1">Buraya Gel</p>
+
+    
+</body>
+
+
+</html>
